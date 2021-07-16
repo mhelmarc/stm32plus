@@ -68,6 +68,7 @@
 #include "fwlib/f4/stdperiph/inc/stm32f4xx_exti.h"
 #include "fwlib/f4/stdperiph/inc/stm32f4xx_i2c.h"
 #include "fwlib/f4/stdperiph/inc/stm32f4xx_flash.h"
+#include "fwlib/f4/stdperiph/inc/stm32f4xx_iwdg.h"
 #include "fwlib/f4/stdperiph/inc/stm32f4xx_wwdg.h"
 #include "fwlib/f4/stdperiph/inc/stm32f4xx_syscfg.h"
 
