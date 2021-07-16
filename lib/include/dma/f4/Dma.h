@@ -55,6 +55,9 @@ namespace stm32plus {
       bool isHalfComplete() const;
       bool isError() const;
 
+      void disableStream() const;
+      void enableStream() const;
+
       uint32_t getChannelNumber() const;
 
       operator DMA_PeripheralType *();
@@ -194,5 +197,21 @@ namespace stm32plus {
 
   inline uint32_t Dma::getChannelNumber() const {
     return _channelNumber;
+  }
+
+
+  /**
+   * Enable DMA stream
+   */
+  inline void Dma::enableStream() const {
+    DMA_Cmd(_peripheralAddress,ENABLE);
+  }
+
+
+  /**
+   * Disable DMA stream
+   */
+  inline void Dma::disableStream() const {
+    DMA_Cmd(_peripheralAddress,DISABLE);
   }
 }
